@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>U'S Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="icon" type="image/png" href="images/logo.png">       
+        <link rel="stylesheet" href="css/projects.css">
+    </head>
+
+    <body>
+        <div class="deconstructed">
+            PROJECTS
+            <div>PROJECTS</div>
+            <div>PROJECTS</div>
+            <div>PROJECTS</div>
+            <div>PROJECTS</div>
+        </div>
+
+        <!-- <div class="circle" id="circle01"></div>
+        <div class="circle" id="circle02"></div>
+        <div class="circle" id="circle03"></div>
+        <div class="circle" id="circle04"></div>
+        <div class="circle" id="circle05"></div>
+        <div class="circle" id="circle06"></div>
+        <div class="circle" id="circle07"></div>
+        <div class="circle" id="circle08"></div>
+        <div class="circle" id="circle09">
+          <img src="signature_pandadoc.png" class="img" style="z-index: 100;">
+        </div> -->
+
+        <header>
+        </br></br></br>
+          <ul>
+              <li><a href="index.html#section01">Why</a></li>
+              <li><a href="index.html#section02">Who</a></li>
+              <li><a href="index.html#section03">What</a></li>
+          </ul>
+        </header>
+        
+        <!-- http://listmoz.com/#ZpFZ6bRlVVZf0vT1b -->
+        
+        <div class="waterfall">
+          <a class="item" href="projects/TheWitcher_ABardsTale.html">
+              <p>THE WITCHER: </br>A BARD'S TALE</p>
+              <h2></br></br></br></br>PRODUCER</h2>
+              <img src="/images/projects/theWitcher2.gif"/>
+          </a>
+            
+          <a class="item" href="projects/FinalFantasy_MysteryWorld.html">
+              <p>FINAL FANTASY: </br>MYSTERY WORLD</p>
+            <h2></br></br></br></br>MANAGER</h2>
+            <img src="/images/projects/ffmw_cutscene.gif"/>
+          </a>
+          
+          <a class="item" href="projects/WeepEngine.html">
+            <p>WEEP ENGINE</p>
+            <h2></br></br>C++ PROGRAMMER</h2>
+            <img src="/images/projects/weepengine.gif"/>
+          </a>
+
+          <a class="item" href="projects/Fire_Ice.html">
+            <p>FIRE & ICE</p>
+            <h2></br></br>C++ PROGRAMMER</h2>
+            <img src="images/projects/fireice.gif"/>
+          </a>
+
+          <a class="item" href="projects/GeometryHell.html">
+            <p>GEOMETRY HELL</p>
+            <h2></br></br>UNITY PROGRAMMER</h2>
+            <h5></br></br></br>GAME JAM</h5>
+            <img src="images/projects/GeometryHell.gif"/>
+          </a>
+
+          <a class="item" href="projects/AndroDunos.html">
+            <p>ANDRO DUNOS</p>
+            <h2></br></br>MANAGER / C++ PROGRAMMER</h2>
+            <img src="images/projects/Androdunos2.gif"/>
+          </a>
+
+          <a class="item" href="projects/DiscoPub.html">
+            <p>DISCOPUB</p>
+            <h2></br></br>UNITY PROGRAMMER</h2>
+            <img src="images/projects/discopub.gif"/>
+          </a>
+
+          <a class="item" href="projects/FishingTrash.html">
+            <p>FISHING TRASH</p>
+            <h2></br></br>UNITY PROGRAMMER</h2>
+            <h5></br></br></br>GAME JAM</h5>
+            <img src="images/projects/fishingTrash.gif"/>
+          </a>
+
+          <a class="item" href="projects/FastTailsIO.html">
+            <p>FAST TAILS IO</p>
+            <h2></br></br>DESIGNER</h2>
+            <img src="images/projects/FastTailsIO.gif"/>
+          </a>
+
+          <a class="item" href="projects/ChocolatePinball.html">
+            <p>CHOCOLATE </br>PINBALL</p>
+            <h2></br></br></br></br>C++ PROGRAMMER</h2>
+            <img src="images/projects/pinball.gif"/>
+          </a>
+
+          <a class="item" href="projects/Paradoxhedron.html">
+            <p>PARADOXHEDRON</p>
+            <h2></br></br>VOXEL ARTIST</h2>
+            <h5></br></br></br>GAME JAM</h5>
+            <img src="images/projects/paradoxhedron.gif"/>
+          </a>
+
+          <a class="item" href="projects/SoulKeeper.html">
+            <p>SOUL KEEPER</p>
+            <h2></br></br>VOXEL ARTIST</h2>
+            <h5></br></br></br>GAME JAM</h5>
+            <img src="images/projects/Soulkeeper3.gif"/>
+          </a>
+
+        </div>
+        <script type="text/javascript">
+          const observer = new IntersectionObserver(f, {
+              threshold: [0, 0.9]
+            });
+          
+          function f(entries) {
+            for (const entry of entries) {
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
+                entry.target.classList.toggle("inbound", true);
+              } else {
+                entry.target.classList.toggle("inbound", false);
+              }
+            }
+          }
+          
+          const itemEls = Array.from(document.querySelectorAll(".item"));
+          for (const itemEl of itemEls) observer.observe(itemEl);
+
+          $("div.item.inbound").click(function() {
+            window.location = $(this).find("a").attr("href"); 
+          return false;
+          });
+        </script>
+        
+    </body>
+</html>
