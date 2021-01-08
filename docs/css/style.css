@@ -43,7 +43,7 @@ header
 header .logo
 {
     position: relative;
-    max-width: 80px;
+    max-width: 90px;
 }
 
 header ul
@@ -76,11 +76,14 @@ header ul li a
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    display: block;
 }
 
 .content .textBox
 {
-    max-width: 600px;
+    max-width: 90%;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -95,7 +98,7 @@ header ul li a
 
 .content .textBox h2 span
 {
-    color: rgb(148, 96, 0);
+    color: rgb(0, 64, 167);
     font-weight: 900;
     font-size: 90px;
 
@@ -103,6 +106,7 @@ header ul li a
 
 .content .textBox p
 {
+    margin-top:30px;
     color:#333;
 }
 
@@ -129,12 +133,15 @@ header ul li a
 {
     max-width: 340px;
     width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .content .cacatext
 {
     position: relative;
-    background: #fff;
+    background: rgb(248, 248, 248);
     border-radius: 3px;
     text-align: left;
     padding: 13vmin 5vmin 20vmin 10vmin;
@@ -179,9 +186,7 @@ header ul li a
 .content .caca img
 {
     max-width: 80%;
-
     border-radius: 0.2em;
-
 }
 
 @media screen and (min-width: 1430px) {
@@ -192,12 +197,21 @@ header ul li a
         left: 50vmin;
         margin-top: 10%;
         margin-left: 10%;
+        width: 60%;
     }
     .content {
         display: flex;
+        margin-top: 10%;
     }
     .content .caca {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 1430px) and (min-width: 600px){
+    .content .caca {
+        display:block;
+        margin:auto;
     }
 }
 
@@ -208,10 +222,11 @@ header ul li a
         width: 100%;
         margin-left:10%;
     }
-    h2 {
-        font-size: 0.5em;
+    .content .textBox h2 {
+        font-size: 30px;
     }
-    h2 span{
+    .content .textBox h2 span{
+        font-size: 60px;
         display: block;
     }
     p {
@@ -243,7 +258,6 @@ header ul li a
     display: inline-block;
     margin: 5px 0;
     transform: scale(0.6);
-    filter: invert(1);
 }
 
 .circle
@@ -253,7 +267,7 @@ header ul li a
     left:0;
     width:100%;
     height: 100%;
-    background: orange;
+    background: rgb(255, 115, 0);
     clip-path: circle(600px at right 800px);
 }
 
