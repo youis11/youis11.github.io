@@ -215,6 +215,13 @@ header ul li a
     }
 }
 
+
+@media screen and (max-width:450px){
+    header{
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     
     .content .caca 
@@ -231,9 +238,9 @@ header ul li a
     }
     p {
         font-size: 16px;
-    }
-    
+    } 
 }
+
 
 .socials
 {
