@@ -417,4 +417,20 @@ i{
   background-color: #fff;
   text-decoration:none;
   color:black;
+  animation: glowing 3000ms infinite;
 }
+
+@keyframes glowing {
+    0% {
+      background-color: #06e6e6;
+      box-shadow: 0 0 5px #06e6e6;
+    }
+    50% {
+      background-color: #289ee2;
+      box-shadow: 0 0 20px #289ee2;
+    }
+    100% {
+      background-color: #06e6e6;
+      box-shadow: 0 0 5px #06e6e6;
+    }
+  }
