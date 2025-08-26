@@ -12,7 +12,9 @@
 
   <body>
     <section id="domov">
-      <input type="button" value="<-" onclick="history.back(-1)" class="back_btn"/>
+      <button onclick="history.back(-1)" class="back_btn" aria-label="Back">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
       <div class="circle"></div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

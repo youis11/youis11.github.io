@@ -1,0 +1,136 @@
+/* Reset some defaults */
+body {
+  background: #181a20;
+  color: #f3f3f3;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section#domov {
+  max-width: 1920px;
+  background: #23262e;
+  border-radius: 0px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  padding: 32px 24px;
+  position: relative;
+}
+
+.back_btn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: linear-gradient(135deg, #ffb400 0%, #ff6f00 100%);
+  color: #23262e;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  z-index: 100;
+  outline: none;
+}
+.back_btn:hover {
+  background: linear-gradient(135deg, #ff6f00 0%, #ffb400 100%);
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.28);
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background: url('/images/logo.png') center/cover no-repeat;
+  border-radius: 50%;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.carousel {
+  width: 70%;        /* Scales the carousel to half its parent width */
+  margin: 0 auto;    /* Center horizontally */
+}
+.carousel-inner img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+#Test1 {
+  background: #23262e;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+#Test1 h2 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffb400;
+  letter-spacing: 1px;
+}
+#Test1 h5 {
+  color: #ffb400;
+}
+
+#Test1 h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #f3f3f3;
+}
+
+#Test1 p {
+  font-size: 1.08em;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #f3f3f3;
+}
+
+#Test1 h6 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #ffb400;
+}
+
+#Test1 ul {
+  margin-left: 18px;
+  margin-bottom: 18px;
+}
+#Test1 ul ul {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#Test1 li {
+  margin-bottom: 6px;
+  font-size: 1em;
+  color: #f3f3f3;
+
+}
+
+.button {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 12px;
+  padding: 10px 28px;
+  background: linear-gradient(90deg, #ffb400 0%, #ff6f00 100%);
+  color: #23262e;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.button:hover {
+  background: linear-gradient(90deg, #ff6f00 0%, #ffb400 100%);
+  color: #fff;
+}
