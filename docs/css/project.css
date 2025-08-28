@@ -8,11 +8,11 @@ body {
 }
 
 section#domov {
-  max-width: 1920px;
+  max-width: 100vw;
   background: #23262e;
   border-radius: 0px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.25);
-  padding: 32px 24px;
+  padding: 16px;
   position: relative;
 }
 
@@ -52,12 +52,16 @@ section#domov {
 }
 
 .carousel {
-  width: 70%;        /* Scales the carousel to half its parent width */
+  width: 100%;        /* Scales the carousel to half its parent width */
   margin: 0 auto;    /* Center horizontally */
+  position: static; /* Not fixed */
+}
+.carousel-inner {
+  position: relative;
 }
 .carousel-inner img {
   width: 100%;
-  height: 540px;
+  max-height: 712px;
   object-fit: cover;
 }
 
@@ -133,4 +137,60 @@ section#domov {
 .button:hover {
   background: linear-gradient(90deg, #ff6f00 0%, #ffb400 100%);
   color: #fff;
+}
+
+/* Make modal dialog and content fill viewport, remove all margins/padding */
+#imageModal .modal-dialog {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imageModal .modal-content {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #23262e;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imageModal .modal-body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+/* Image uses natural size, scrolls only if larger than viewport */
+#modalImage {
+  display: block;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  margin: auto;
+  box-shadow: none;
+  border: none;
+  background: none;
 }
