@@ -78,26 +78,30 @@ const slides = [
   city: "Hack&Slash",
   country: '40 PPL Producer',
   img: 'images/projects/theWitcher2.gif',
-  link: 'https://overpowered-team.github.io/TheWitcher/Perfiles/LluisMoreu.html'},
+  link: 'projects/TheWitcher_ABardsTale.html'},
+
+{
+  city: "Tower_Attack",
+  country: '40 PPL Manager',
+  img: 'images/projects/Lunarpunk.gif' ,
+  link: 'projects/Lunarpunk.html'},
 
 {
   city: "Dungeon_Crawler",
   country: '8 PPL Manager',
   img: 'images/projects/ffmw_cutscene.gif' ,
-  link: 'https://polarpathgames.github.io/Final-Fantasy-Mystery-World/lluis-moreu-farran.html'},
+  link: 'projects/FinalFantasy_MysteryWorld.html'},
 
 {
   city: '3D_Engine',
   country: 'C++ Programmer',
   img: 'images/projects/weepengine.gif',
-  link: 'https://weep-works.github.io/WEEP-ENGINE/lluis-moreu-farran.html' },
+  link: 'projects/WeepEngine.html' },
 
 {
-  city: 'SDL_Platformer',
-  country: 'C++ Programmer',
-  link: 'https://devrookies.github.io/Development/' ,
-  img: 'images/projects/fireice.gif'}];
-
-
+  city: 'Curious...?',
+  country: 'More Projects',
+  img: 'images/projects/Indiana.gif',
+  link: 'projects.html' }];
 
 ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
