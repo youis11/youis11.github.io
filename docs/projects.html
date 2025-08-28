@@ -44,7 +44,7 @@
         <div class="waterfall">
           <a class="item" href="projects/Lunarpunk.html">
               <p>LUNARPUNK</p>
-              <h2></br></br></br></br>PRODUCER</h2>
+              <h2></br></br>PRODUCER</h2>
               <img src="/images/projects/Lunarpunk.gif"/>
           </a>
 
@@ -54,9 +54,9 @@
               <img src="/images/projects/theWitcher2.gif"/>
           </a>
             
-          <a class="item" href="projects/FinalFantasy_MysteryWorld.html">
+          <a class="item" href="projects/FinalFantasy_MysteryWorld.html"> <!-- update -->
               <p>FINAL FANTASY: </br>MYSTERY WORLD</p>
-            <h2></br></br></br></br>MANAGER</h2>
+            <h2></br></br></br></br></br></br>MANAGER</h2>
             <img src="/images/projects/ffmw_cutscene.gif"/>
           </a>
           
@@ -78,10 +78,10 @@
             <img src="images/projects/Indiana.gif"/>
           </a>
           
-          <a class="item" href="projects/GeometryHell.html">
-            <p>GEOMETRY HELL</p>
-            <h2></br></br>UNITY PROGRAMMER</h2>
-            <h5></br></br></br>GAME JAM</h5>
+          <a class="item" href="projects/GeometryHell.html"> <!-- update -->
+            <p>GEOMETRY </br>HELL</p>
+            <h2></br></br></br></br>UNITY PROGRAMMER</h2>
+            <h5></br></br></br></br></br>GAME JAM</h5>
             <img src="images/projects/GeometryHell.gif"/>
           </a>
 
@@ -140,9 +140,9 @@
         </div>
         <script type="text/javascript">
           const observer = new IntersectionObserver(f, {
-              threshold: [0, 0.9]
-            });
-          
+            threshold: [0, 0.9]
+          });
+
           function f(entries) {
             for (const entry of entries) {
               if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
@@ -152,13 +152,16 @@
               }
             }
           }
-          
+
           const itemEls = Array.from(document.querySelectorAll(".item"));
           for (const itemEl of itemEls) observer.observe(itemEl);
 
-          $("div.item.inbound").click(function() {
-            window.location = $(this).find("a").attr("href"); 
-          return false;
+          // Use plain JS for better mobile support
+          document.querySelectorAll(".item").forEach(function(item) {
+            item.addEventListener("click", function() {
+              const link = item.getAttribute("href") || item.querySelector("a")?.getAttribute("href");
+              if (link) window.location = link;
+            });
           });
         </script>
         

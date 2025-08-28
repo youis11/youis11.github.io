@@ -341,3 +341,30 @@ header ul li a
     margin-left: 40px;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 400px) {
+  .waterfall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .item {
+    width: 95vw;
+    min-width: 0;
+    margin: 8px 0;
+    font-size: 0.9em;
+  }
+  .item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  header ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  header ul li {
+    margin: 4px 0;
+  }
+}
