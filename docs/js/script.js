@@ -75,6 +75,18 @@ class CitiesSlider extends React.Component {
 
 const slides = [
 {
+  city: "LiveOps_Roguelike",
+  country: '40 TEAM Producer',
+  img: 'images/projects/DungeonTour.jpg' ,
+  link: 'projects/DungeonTour.html'},
+
+{
+  city: "Narrative_Open-World",
+  country: '120 TEAM Producer',
+  img: 'images/projects/TAM.jpg' ,
+  link: 'projects/TAM.html'},
+
+{
   city: "Hack&Slash",
   country: '40 PPL Producer',
   img: 'images/projects/theWitcher2.gif',
@@ -85,12 +97,6 @@ const slides = [
   country: '40 PPL Manager',
   img: 'images/projects/Lunarpunk.gif' ,
   link: 'projects/Lunarpunk.html'},
-
-{
-  city: "Dungeon_Crawler",
-  country: '8 PPL Manager',
-  img: 'images/projects/ffmw_cutscene.gif' ,
-  link: 'projects/FinalFantasy_MysteryWorld.html'},
 
 {
   city: '3D_Engine',
